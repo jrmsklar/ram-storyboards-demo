@@ -50,6 +50,52 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="8MO-6b-7FA">
+            <objects>
+                <viewController id="PRx-zX-X5F" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zO1-Kr-ZPL"/>
+                        <viewControllerLayoutGuide type="bottom" id="f6S-0x-yJb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P7v-5k-suW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5K-By-7gy">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <connections>
+                                    <segue destination="SSW-cL-UqX" kind="embed" id="X4J-8F-Vnz"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N5K-By-7gy" secondAttribute="trailing" id="4F4-Vk-dpC"/>
+                            <constraint firstItem="N5K-By-7gy" firstAttribute="leading" secondItem="P7v-5k-suW" secondAttribute="leading" id="AV8-uo-bcW"/>
+                            <constraint firstItem="N5K-By-7gy" firstAttribute="top" secondItem="zO1-Kr-ZPL" secondAttribute="bottom" id="Dv1-Yw-jPL"/>
+                            <constraint firstItem="f6S-0x-yJb" firstAttribute="top" secondItem="N5K-By-7gy" secondAttribute="bottom" id="Kcr-QF-8fT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="DBJ-Ln-n70" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="8pr-0r-vIX" id="c5s-x6-d3N"/>
+                        </connections>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZH-lM-bR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="8pr-0r-vIX" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="701"/>
+        </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="z08-Mo-3N8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingsViewController" id="SSW-cL-UqX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5Q-bj-1WL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5" y="1143"/>
+        </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -108,6 +154,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="PRx-zX-X5F" kind="relationship" relationship="viewControllers" id="LSp-2c-gjO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -118,5 +165,6 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="settings" width="25" height="25"/>
     </resources>
 </document>
