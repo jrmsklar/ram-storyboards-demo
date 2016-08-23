@@ -1,0 +1,6 @@
+framework module Pods_RAM_Storyboards_Demo {
+  umbrella header "Pods-RAM-Storyboards-Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,6 +13,7 @@
 		0213A98E1D6C21BF00BCC57C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0213A98C1D6C21BF00BCC57C /* Main.storyboard */; };
 		0213A9901D6C21BF00BCC57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0213A98F1D6C21BF00BCC57C /* Assets.xcassets */; };
 		0213A9931D6C21BF00BCC57C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0213A9911D6C21BF00BCC57C /* LaunchScreen.storyboard */; };
+		95DEA6B4AEB33D06B87C3D12 /* Pods_RAM_Storyboards_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99534C83790AF67F274DBA62 /* Pods_RAM_Storyboards_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		0213A98F1D6C21BF00BCC57C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0213A9921D6C21BF00BCC57C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0213A9941D6C21BF00BCC57C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49DAAEFBCB2EBEA181134C61 /* Pods-RAM-Storyboards-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAM-Storyboards-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAM-Storyboards-Demo/Pods-RAM-Storyboards-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		99534C83790AF67F274DBA62 /* Pods_RAM_Storyboards_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAM_Storyboards_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5978ADEABBFDBA3ACA755A /* Pods-RAM-Storyboards-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAM-Storyboards-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAM-Storyboards-Demo/Pods-RAM-Storyboards-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95DEA6B4AEB33D06B87C3D12 /* Pods_RAM_Storyboards_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0213A9851D6C21BF00BCC57C /* RAM-Storyboards-Demo */,
 				0213A9841D6C21BF00BCC57C /* Products */,
+				9F471BB4AAAE8145FD17E195 /* Pods */,
+				417921EB99259E5B1313679F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "RAM-Storyboards-Demo";
 			sourceTree = "<group>";
 		};
+		417921EB99259E5B1313679F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99534C83790AF67F274DBA62 /* Pods_RAM_Storyboards_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F471BB4AAAE8145FD17E195 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49DAAEFBCB2EBEA181134C61 /* Pods-RAM-Storyboards-Demo.debug.xcconfig */,
+				BE5978ADEABBFDBA3ACA755A /* Pods-RAM-Storyboards-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0213A9971D6C21BF00BCC57C /* Build configuration list for PBXNativeTarget "RAM-Storyboards-Demo" */;
 			buildPhases = (
+				51261EAB6C4A90D19B7CF8A3 /* [CP] Check Pods Manifest.lock */,
 				0213A97F1D6C21BF00BCC57C /* Sources */,
 				0213A9801D6C21BF00BCC57C /* Frameworks */,
 				0213A9811D6C21BF00BCC57C /* Resources */,
+				73207842E2F404CA0579F6E4 /* [CP] Embed Pods Frameworks */,
+				43155508D923D106FAD456AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43155508D923D106FAD456AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAM-Storyboards-Demo/Pods-RAM-Storyboards-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51261EAB6C4A90D19B7CF8A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73207842E2F404CA0579F6E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAM-Storyboards-Demo/Pods-RAM-Storyboards-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0213A97F1D6C21BF00BCC57C /* Sources */ = {
@@ -253,6 +328,7 @@
 		};
 		0213A9981D6C21BF00BCC57C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DAAEFBCB2EBEA181134C61 /* Pods-RAM-Storyboards-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RAM-Storyboards-Demo/Info.plist";
@@ -264,6 +340,7 @@
 		};
 		0213A9991D6C21BF00BCC57C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5978ADEABBFDBA3ACA755A /* Pods-RAM-Storyboards-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RAM-Storyboards-Demo/Info.plist";
@@ -292,6 +369,7 @@
 				0213A9991D6C21BF00BCC57C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
