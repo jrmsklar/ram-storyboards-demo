@@ -30,4 +30,4 @@ Follow the steps outlined below.
 
 ![run](https://cloud.githubusercontent.com/assets/879038/17882700/174635b8-68dc-11e6-991c-9a01ab3e6fe0.gif)
 
-Thanks to @jeffaburt for helping look into this!
+Thanks to [@jeffaburt](https://github.com/jeffaburt) for helping look into this!
