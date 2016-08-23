@@ -29,3 +29,5 @@ Follow the steps outlined below.
 (7) Build and run:
 
 ![run](https://cloud.githubusercontent.com/assets/879038/17882700/174635b8-68dc-11e6-991c-9a01ab3e6fe0.gif)
+
+Thanks to @jeffaburt for helping look into this!
